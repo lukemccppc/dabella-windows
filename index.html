@@ -45,6 +45,13 @@
 
     a { color: inherit; text-decoration: none; }
 
+    /* ─── MAX WIDTH WRAPPER ─── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
     /* ─── STICKY HEADER ─── */
     .site-header {
       position: sticky;
@@ -54,9 +61,16 @@
       padding: 0 5%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       height: 68px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.22);
+    }
+
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
     }
 
     .header-logo svg { height: 36px; width: auto; }
@@ -105,10 +119,9 @@
       position: relative;
       overflow: hidden;
       min-height: 620px;
-      display: grid;
-      grid-template-columns: 1fr 440px;
-      gap: 0;
+      display: flex;
       align-items: stretch;
+      justify-content: center;
     }
 
     .hero::before {
@@ -119,11 +132,21 @@
       opacity: 0.18;
     }
 
-    /* Window pane grid decoration */
-    .hero::after {
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      align-items: stretch;
+    }
+
+    /* Window pane divider */
+    .hero-inner::after {
       content: '';
       position: absolute;
-      right: 440px;
+      right: 420px;
       top: 0;
       bottom: 0;
       width: 1px;
@@ -133,7 +156,7 @@
     .hero-content {
       position: relative;
       z-index: 2;
-      padding: 72px 5% 72px 6%;
+      padding: 72px 56px 72px 40px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -368,6 +391,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .trust-bar .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       gap: 40px;
       flex-wrap: wrap;
     }
@@ -396,6 +425,7 @@
     /* ─── SECTION STYLES ─── */
     .section { padding: 80px 5%; }
     .section-sm { padding: 56px 5%; }
+    .section > .container, .section-sm > .container { padding: 0; }
 
     .section-eyebrow {
       font-size: 0.75rem;
@@ -512,9 +542,14 @@
     /* ─── SPLIT SECTION ─── */
     .split-section {
       background: var(--navy);
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .split-section .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      overflow: hidden;
     }
 
     .split-img {
@@ -1019,7 +1054,7 @@
       .hero::after { display: none; }
       .hero-content { padding: 52px 5% 36px; }
       .hero-form-panel { padding: 36px 5%; }
-      .split-section { grid-template-columns: 1fr; }
+      .split-section .container { grid-template-columns: 1fr; }
       .split-img { min-height: 280px; }
       .split-img::after { background: linear-gradient(to top, var(--navy) 0%, transparent 60%); }
       .split-content { padding: 48px 5%; }
@@ -1061,6 +1096,7 @@
 
   <!-- HEADER -->
   <header class="site-header">
+   <div class="container">
     <a href="#" class="header-logo" aria-label="DaBella home">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262 57" aria-hidden="true">
         <defs>
@@ -1084,10 +1120,12 @@
       </a>
       <a href="#quote-form" class="btn-header">Get Free Quote</a>
     </div>
+   </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
+   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-eyebrow animate-up">Window Replacement Specialists</div>
       <h1 class="animate-up delay-1">
@@ -1120,6 +1158,7 @@
 
     <!-- FORM PANEL -->
     <div class="hero-form-panel" id="quote-form">
+
       <div class="form-offer-tag">🎉 Save 10% — Limited Time Offer</div>
       <div class="form-panel-eyebrow">Free, No-Obligation</div>
       <h2 class="form-panel-title">Get Your Free Window Quote</h2>
@@ -1162,10 +1201,12 @@
         <p class="form-disclaimer">By submitting, you agree to be contacted about DaBella services. No high-pressure sales — ever.</p>
       </form>
     </div>
+   </div>
   </section>
 
   <!-- TRUST BAR -->
   <div class="trust-bar">
+   <div class="container">
     <span class="trust-bar-label">Trusted By Homeowners</span>
     <span class="trust-item">
       <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -1187,6 +1228,7 @@
       <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
       Dealers of Distinction Award
     </span>
+   </div>
   </div>
 
   <!-- BENEFITS SECTION -->
@@ -1271,6 +1313,7 @@
 
   <!-- SPLIT / WHY DABELLA -->
   <section class="split-section">
+   <div class="container">
     <div class="split-img">
       <img
         src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80"
@@ -1320,6 +1363,7 @@
       </div>
       <a href="#quote-form" class="btn-primary" style="align-self:flex-start;">Get My Free Quote</a>
     </div>
+   </div>
   </section>
 
   <!-- WINDOW TYPES -->
