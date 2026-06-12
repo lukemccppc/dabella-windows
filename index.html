@@ -1047,11 +1047,11 @@
     }
 
     @media (max-width: 900px) {
-      .hero {
+      .hero { min-height: auto; }
+      .hero-inner {
         grid-template-columns: 1fr;
-        min-height: auto;
       }
-      .hero::after { display: none; }
+      .hero-inner::after { display: none; }
       .hero-content { padding: 52px 5% 36px; }
       .hero-form-panel { padding: 36px 5%; }
       .split-section .container { grid-template-columns: 1fr; }
