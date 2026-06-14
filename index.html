@@ -128,8 +128,8 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=80') center/cover no-repeat;
-      opacity: 0.18;
+      background: url('/Downloads/hero_home-scaled-1-2048x1463.png') center/cover no-repeat;
+      opacity: 0.33;
     }
 
     .hero-inner {
@@ -395,6 +395,13 @@
 
     .trust-bar .container {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .trust-bar-awards {
+      display: flex;
       align-items: center;
       justify-content: center;
       gap: 40px;
@@ -542,14 +549,9 @@
     /* ─── SPLIT SECTION ─── */
     .split-section {
       background: var(--navy);
-      display: flex;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .split-section .container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr minmax(auto, 600px);
+      overflow: hidden;
     }
 
     .split-img {
@@ -700,15 +702,7 @@
     .testimonial-card:hover { box-shadow: var(--shadow); }
 
     .testimonial-card::before {
-      content: '\201C';
-      font-family: var(--font-display);
-      font-size: 5rem;
-      color: var(--green);
-      line-height: 0.8;
-      position: absolute;
-      top: 20px;
-      left: 24px;
-      opacity: 0.35;
+      display: none;
     }
 
     .stars {
@@ -1054,7 +1048,7 @@
       .hero-inner::after { display: none; }
       .hero-content { padding: 52px 5% 36px; }
       .hero-form-panel { padding: 36px 5%; }
-      .split-section .container { grid-template-columns: 1fr; }
+      .split-section { grid-template-columns: 1fr; }
       .split-img { min-height: 280px; }
       .split-img::after { background: linear-gradient(to top, var(--navy) 0%, transparent 60%); }
       .split-content { padding: 48px 5%; }
@@ -1095,7 +1089,7 @@
 
   <!-- PROMO STRIP -->
   <div class="promo-strip">
-    Limited Time: <strong>10% Off Window Replacement</strong> — Offer Expires June 30, 2026
+    Limited Time: <strong>10% Off + No Payments for 12 Months</strong> — Offer Expires June 30, 2026
     <a href="#quote-form">Claim Offer →</a>
   </div>
 
@@ -1128,7 +1122,7 @@
   <section class="hero">
    <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-eyebrow animate-up">Window Replacement Specialists</div>
+      <div class="hero-eyebrow animate-up">Transform Your Home With DaBella</div>
       <h1 class="animate-up delay-1">
         New Windows.<br>
         <em>Lower Bills.</em><br>
@@ -1159,7 +1153,7 @@
     <!-- FORM PANEL -->
     <div class="hero-form-panel" id="quote-form">
 
-      <div class="form-offer-tag">🎉 Save 10% — Limited Time Offer</div>
+      <div class="form-offer-tag">🎉 10% Off + No Payments for 12 Months</div>
       <div class="form-panel-eyebrow">Free, No-Obligation</div>
       <h2 class="form-panel-title">Get Your Free Window Quote</h2>
       <p class="form-panel-sub">See prices in your area. No commitment, no pressure.</p>
@@ -1186,17 +1180,6 @@
           <label for="zip">Zip Code</label>
           <input type="text" id="zip" name="zip" placeholder="Enter your zip code" maxlength="5" required />
         </div>
-        <div class="form-group">
-          <label for="windows">How Many Windows?</label>
-          <select id="windows" name="window_count">
-            <option value="">Select an estimate</option>
-            <option>1–3 windows</option>
-            <option>4–6 windows</option>
-            <option>7–10 windows</option>
-            <option>10+ windows</option>
-            <option>Not sure yet</option>
-          </select>
-        </div>
         <button type="submit" class="btn-form">Get My Free Quote →</button>
         <p class="form-disclaimer">By submitting, you agree to be contacted about DaBella services. No high-pressure sales — ever.</p>
       </form>
@@ -1208,26 +1191,28 @@
   <div class="trust-bar">
    <div class="container">
     <span class="trust-bar-label">Trusted By Homeowners</span>
-    <span class="trust-item">
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      HomeAdvisor Elite Service
-    </span>
-    <span class="trust-item">
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      Angie's List Super Service
-    </span>
-    <span class="trust-item">
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      GuildMaster Award
-    </span>
-    <span class="trust-item">
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      Qualified Remodelers Top 500
-    </span>
-    <span class="trust-item">
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      Dealers of Distinction Award
-    </span>
+    <div class="trust-bar-awards">
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        HomeAdvisor Elite Service
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Angie's List Super Service
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        GuildMaster Award
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Qualified Remodelers Top 500
+      </span>
+      <span class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Dealers of Distinction Award
+      </span>
+    </div>
    </div>
   </div>
 
@@ -1313,7 +1298,6 @@
 
   <!-- SPLIT / WHY DABELLA -->
   <section class="split-section">
-   <div class="container">
     <div class="split-img">
       <img
         src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80"
@@ -1363,7 +1347,6 @@
       </div>
       <a href="#quote-form" class="btn-primary" style="align-self:flex-start;">Get My Free Quote</a>
     </div>
-   </div>
   </section>
 
   <!-- WINDOW TYPES -->
@@ -1551,14 +1534,14 @@
     <div style="position:relative;z-index:1;max-width:700px;margin:0 auto;">
       <div class="section-eyebrow">Limited Time Offer — Expires June 30, 2026</div>
       <h2 class="section-title" style="font-size:clamp(2rem,3.5vw,3rem);">
-        Ready for <em>Better Windows?</em><br>Get 10% Off Today.
+        Ready for <em>Better Windows?</em><br>10% Off + No Payments for 12 Months.
       </h2>
       <p class="section-sub" style="margin:14px auto 0;max-width:560px;">
         Claim your free, no-obligation in-home consultation and lock in your 10% discount before it expires. No pressure. No commitment to meet.
       </p>
       <div class="cta-buttons">
         <a href="#quote-form" class="btn-primary" style="font-size:1.05rem;padding:17px 40px;">
-          Claim 10% Off + Free Quote
+          Claim 10% Off + 0% Financing →
         </a>
       </div>
       <p class="cta-note">No commitment required · No high-pressure sales, ever.</p>
