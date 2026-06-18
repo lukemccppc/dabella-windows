@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WSPJKX4R');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | DaBella Windows</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0e1f3d;
+      --green: #96d700;
+      --green-dark: #74bc1e;
+      --white: #ffffff;
+      --off-white: #f7f8fa;
+      --gray-light: #eef0f5;
+      --text: #1c2235;
+      --text-muted: #5a6278;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--off-white);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* HEADER */
+    .site-header {
+      background: var(--navy);
+      padding: 0 5%;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .site-header svg { height: 36px; width: auto; }
+
+    /* HERO */
+    .thankyou-hero {
+      background: var(--navy);
+      padding: 72px 5% 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .thankyou-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 100%, rgba(150,215,0,0.12) 0%, transparent 60%);
+    }
+    .check-circle {
+      width: 80px;
+      height: 80px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      position: relative;
+    }
+    .check-circle svg { width: 40px; height: 40px; }
+    .thankyou-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .thankyou-hero h1 em {
+      font-style: normal;
+      color: var(--green);
+    }
+    .thankyou-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* NEXT STEPS */
+    .next-steps {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 5%;
+    }
+    .next-steps h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .step-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 32px 24px;
+      text-align: center;
+      border: 1.5px solid var(--gray-light);
+    }
+    .step-num {
+      width: 52px;
+      height: 52px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--green);
+      margin: 0 auto 16px;
+      border: 2px solid var(--green);
+    }
+    .step-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .step-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* OFFER REMINDER */
+    .offer-bar {
+      background: var(--green);
+      text-align: center;
+      padding: 20px 5%;
+    }
+    .offer-bar p {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .offer-bar span {
+      font-weight: 400;
+      opacity: 0.8;
+      font-size: 0.88rem;
+      display: block;
+      margin-top: 4px;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #080f1e;
+      padding: 24px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: auto;
+    }
+    .site-footer svg { height: 24px; opacity: 0.6; }
+    .footer-copy {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    @media (max-width: 640px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .thankyou-hero { padding: 52px 5% 60px; }
+      .site-header { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSPJKX4R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html" aria-label="DaBella home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262 57">
+        <defs><style>.tc1{fill:#f5f5f0;fill-rule:evenodd}.tc2{fill:#96d700}.tc3{fill:#74bc1e}.tc4{fill:#4b8c19}</style></defs>
+        <path class="tc1" d="M111.75,40.66c5.67,0,8.49-4.49,8.49-9.68s-2.82-9.63-8.49-9.63h-5.78v19.31h5.78ZM98.47,14.06h13.18c10.31,0,16.35,6.56,16.35,16.97s-6.18,16.92-16.57,16.92h-12.95V14.06h0ZM178.8,37.4c0-2.02-1.36-3.99-4.4-3.99h-6.99v7.98h6.85c3.18,0,4.54-2.11,4.54-3.99h0ZM167.4,20.57v6.65h6.04c2.77,0,3.9-1.79,3.9-3.39,0-1.7-1.27-3.26-3.59-3.26h-6.36,0ZM186.56,38.04c0,5.46-4.09,9.91-10.72,9.91h-15.85V14.06h15.07c6.54,0,9.72,4.26,9.72,8.39,0,3.03-1.86,5.87-4.63,6.92,4.36,1.06,6.4,4.68,6.4,8.67h0ZM194.97,32.68h11.72c-.64-2.84-2.73-4.68-5.72-4.68s-5.18,1.74-5.99,4.68M213.31,37.81h-18.3c.77,2.75,2.91,4.72,6.76,4.72,2.68,0,5.77-1.06,7.76-2.43l2.82,4.91c-2.41,1.83-6.27,3.49-10.9,3.49-9.31,0-13.62-6.33-13.62-13.16,0-7.48,5.22-13.16,13.12-13.16,7.13,0,12.58,4.63,12.58,12.61,0,1.01-.09,2.02-.23,3.03M215.49,47.95h7.13V12.92h-7.13v35.03ZM226.19,47.95h7.13V12.92h-7.13v35.03ZM254.93,35.16c0-3.58-2.68-6.6-6.45-6.6s-6.36,3.03-6.36,6.6,2.63,6.7,6.36,6.7,6.45-3.07,6.45-6.7ZM262,23v24.77h-7v-2.77c-1.82,1.83-4.34,3.42-7.74,3.42-7.17,0-12.26-5.87-12.26-13.35s5.22-13.07,12.26-13.07c3.36,0,5.93,1.42,7.74,3.3v-2.3h7ZM149.93,35.16c0-3.58-2.68-6.6-6.45-6.6s-6.36,3.03-6.36,6.6,2.63,6.7,6.36,6.7,6.45-3.07,6.45-6.7ZM157,23v24.77h-7v-2.77c-1.82,1.83-4.34,3.42-7.74,3.42-7.17,0-12.26-5.87-12.26-13.35s5.22-13.07,12.26-13.07c3.36,0,5.93,1.42,7.74,3.3v-2.3h7Z"/>
+        <g>
+          <path class="tc3" d="M58,39l4.63-3.7,4.37,3.7v9l-9,9-16-16v-18l16,16Z"/>
+          <path class="tc4" d="M67,39h-9l5-3.68,4,3.68Z"/>
+          <path class="tc2" d="M42,23l16,16,15-11,7-23-7-5-31,16v7Z"/>
+          <path class="tc3" d="M22,39l-4.63-3.7-4.37,3.7v9l9,9,16-16v-18l-16,16Z"/>
+          <path class="tc4" d="M13,39h9l-5-3.68-4,3.68Z"/>
+          <path class="tc2" d="M38,23l-16,16-15-11L0,5,7,0l31,16v7Z"/>
+        </g>
+      </svg>
+    </a>
+  </header>
+
+  <!-- THANK YOU HERO -->
+  <section class="thankyou-hero">
+    <div class="check-circle">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 13l4 4L19 7" stroke="#0e1f3d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1>You're All Set!<br><em>We'll Be In Touch Soon.</em></h1>
+    <p>Thank you for your request. A DaBella window specialist will reach out within 24 hours to schedule your free, no-obligation in-home consultation.</p>
+  </section>
+
+  <!-- OFFER REMINDER -->
+  <div class="offer-bar">
+    <p>Your 10% Off + No Payments for 12 Months offer is reserved.</p>
+    <span>Mention this offer when your specialist contacts you — expires June 30, 2026.</span>
+  </div>
+
+  <!-- NEXT STEPS -->
+  <section class="next-steps">
+    <h2>What Happens Next</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>We Review Your Request</h3>
+        <p>Our team reviews your information and identifies the right specialist for your area.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>We Reach Out Within 24 Hours</h3>
+        <p>A DaBella window consultant will contact you to confirm details and schedule your visit.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Free In-Home Consultation</h3>
+        <p>Your specialist visits, takes measurements, walks you through options, and provides a transparent quote — no pressure, ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262 57">
+      <defs><style>.fc1{fill:#aaa;fill-rule:evenodd}.fc2{fill:#96d700}.fc3{fill:#74bc1e}.fc4{fill:#4b8c19}</style></defs>
+      <path class="fc1" d="M111.75,40.66c5.67,0,8.49-4.49,8.49-9.68s-2.82-9.63-8.49-9.63h-5.78v19.31h5.78ZM98.47,14.06h13.18c10.31,0,16.35,6.56,16.35,16.97s-6.18,16.92-16.57,16.92h-12.95V14.06h0ZM178.8,37.4c0-2.02-1.36-3.99-4.4-3.99h-6.99v7.98h6.85c3.18,0,4.54-2.11,4.54-3.99h0ZM167.4,20.57v6.65h6.04c2.77,0,3.9-1.79,3.9-3.39,0-1.7-1.27-3.26-3.59-3.26h-6.36,0ZM186.56,38.04c0,5.46-4.09,9.91-10.72,9.91h-15.85V14.06h15.07c6.54,0,9.72,4.26,9.72,8.39,0,3.03-1.86,5.87-4.63,6.92,4.36,1.06,6.4,4.68,6.4,8.67h0ZM194.97,32.68h11.72c-.64-2.84-2.73-4.68-5.72-4.68s-5.18,1.74-5.99,4.68M213.31,37.81h-18.3c.77,2.75,2.91,4.72,6.76,4.72,2.68,0,5.77-1.06,7.76-2.43l2.82,4.91c-2.41,1.83-6.27,3.49-10.9,3.49-9.31,0-13.62-6.33-13.62-13.16,0-7.48,5.22-13.16,13.12-13.16,7.13,0,12.58,4.63,12.58,12.61,0,1.01-.09,2.02-.23,3.03M215.49,47.95h7.13V12.92h-7.13v35.03ZM226.19,47.95h7.13V12.92h-7.13v35.03ZM254.93,35.16c0-3.58-2.68-6.6-6.45-6.6s-6.36,3.03-6.36,6.6,2.63,6.7,6.36,6.7,6.45-3.07,6.45-6.7ZM262,23v24.77h-7v-2.77c-1.82,1.83-4.34,3.42-7.74,3.42-7.17,0-12.26-5.87-12.26-13.35s5.22-13.07,12.26-13.07c3.36,0,5.93,1.42,7.74,3.3v-2.3h7ZM149.93,35.16c0-3.58-2.68-6.6-6.45-6.6s-6.36,3.03-6.36,6.6,2.63,6.7,6.36,6.7,6.45-3.07,6.45-6.7ZM157,23v24.77h-7v-2.77c-1.82,1.83-4.34,3.42-7.74,3.42-7.17,0-12.26-5.87-12.26-13.35s5.22-13.07,12.26-13.07c3.36,0,5.93,1.42,7.74,3.3v-2.3h7Z"/>
+      <g>
+        <path class="fc3" d="M58,39l4.63-3.7,4.37,3.7v9l-9,9-16-16v-18l16,16Z"/>
+        <path class="fc4" d="M67,39h-9l5-3.68,4,3.68Z"/>
+        <path class="fc2" d="M42,23l16,16,15-11,7-23-7-5-31,16v7Z"/>
+        <path class="fc3" d="M22,39l-4.63-3.7-4.37,3.7v9l9,9,16-16v-18l-16,16Z"/>
+        <path class="fc4" d="M13,39h9l-5-3.68-4,3.68Z"/>
+        <path class="fc2" d="M38,23l-16,16-15-11L0,5,7,0l31,16v7Z"/>
+      </g>
+    </svg>
+    <p class="footer-copy">© 2026 DaBella. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
